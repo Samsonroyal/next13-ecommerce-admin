@@ -137,5 +137,7 @@ model Image {
   url         String   // URL of the image
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
+
+  @@index([productId])
   }
 
